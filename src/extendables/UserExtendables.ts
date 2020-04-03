@@ -382,6 +382,11 @@ export default class extends Extendable {
 					Emoji.Woodcutting
 				} Woodcutting level is ${this.skillLevel(SkillsEnum.Woodcutting)}`;
 			}
+			case Activity.Raids: {
+				// const data = currentTask as WoodcuttingActivityTaskOptions;
+
+				return `${this.minionName} is currently doing a raid. Approximately ${formattedDuration} remaining.`;
+			}
 		}
 	}
 
